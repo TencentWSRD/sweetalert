@@ -3,26 +3,24 @@ SweetAlert [![Build Status](https://travis-ci.org/t4t5/sweetalert.svg?branch=mas
 
 An awesome replacement for JavaScript's alert.
 
+#### ATTENTION!
+
+This is a private usage version for our project RDM-CI. Forked from `sweetalert@1.1.3`.
+
+#### 注意！
+
+这是一个专门针对团队内部的sweetalert版本，为了解决bootstrap-sweetalert的fork版本过低导致无法使用一些新特性的问题，对sweetalert做了修改使之与`bootstrap-sweetalert`的行为一致。
+
 ![A success modal](https://raw.github.com/t4t5/sweetalert/master/sweetalert.gif)
-
-[See it in action!](http://t4t5.github.io/sweetalert)
-
-[Learn how to use it!](https://www.ludu.co/lesson/how-to-use-sweetalert)
 
 
 Usage
 -----
 
-You can install SweetAlert through bower:
+Through npm:
 
 ```bash
-bower install sweetalert
-```
-
-Or through npm:
-
-```bash
-npm install sweetalert
+npm install sweetalert-ci-dev
 ```
 
 Alternatively, download the package and reference the JavaScript and CSS files manually:
@@ -31,8 +29,6 @@ Alternatively, download the package and reference the JavaScript and CSS files m
 <script src="dist/sweetalert.min.js"></script>
 <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 ```
-**Note:** If you're using an older version than v1.0.0, the files are `lib/sweet-alert.min.js` and `lib/sweet-alert.css`
-
 
 Tutorial
 --------
@@ -63,7 +59,7 @@ swal({
   text: "You will not be able to recover this imaginary file!",
   type: "warning",
   showCancelButton: true,
-  confirmButtonColor: "#DD6B55",
+  confirmButtonClass: "btn-danger",
   confirmButtonText: "Yes, delete it!",
   closeOnConfirm: false,
   html: false
@@ -146,12 +142,3 @@ If you want to contribute:
 - Keep in mind that SweetAlert uses Browserify in order to compile ES6-files. For easy debugging, make sure you reference the file `dist/sweetalert-dev.js` instead of `sweetalert.js`.
 
 - After you're done, make a pull request and wait for approval! :)
-
-
-Related projects
-----------------
-
-* [SweetAlert for Android](https://github.com/pedant/sweet-alert-dialog)
-* [SweetAlert for Bootstrap](https://github.com/lipis/bootstrap-sweetalert)
-* [SweetAlert for AngularJS](https://github.com/oitozero/ngSweetAlert)
-* [SweetAlert for RubyOnRails](https://github.com/sharshenov/sweetalert-rails)
