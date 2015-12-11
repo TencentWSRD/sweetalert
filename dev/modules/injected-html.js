@@ -36,7 +36,7 @@ var injectedHTML =
 
     // Title, text and input
     `<h2>Title</h2>
-    <p>Text</p>
+    <p class="lead text-muted">Text</p>
     <fieldset>
       <input type="text" tabIndex="3" />
       <div class="sa-input-error"></div>
@@ -50,17 +50,10 @@ var injectedHTML =
 
     // Cancel and confirm buttons
     `<div class="sa-button-container">
-      <button class="cancel" tabIndex="2">Cancel</button>
+      <button class="cancel btn btn-default btn-lg waves-effect" tabIndex="2">Cancel</button>
       <div class="sa-confirm-button-container">
-        <button class="confirm" tabIndex="1">OK</button>` + 
-
-        // Loading animation
-        `<div class="la-ball-fall">
-          <div></div>
-          <div></div>
-          <div></div>
+        <button class="confirm btn btn-lg waves-effect" tabIndex="1">OK</button>
         </div>
-      </div>
     </div>` +
 
   // End of modal

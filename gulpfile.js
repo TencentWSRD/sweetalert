@@ -90,12 +90,12 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist')); // User version
 });
 
-gulp.task('test', function() {
-  return gulp.src('./test/index.html')
-    .pipe(qunit({
-      timeout: 20
-    }));
-});
+// gulp.task('test', function() {
+//   return gulp.src('./test/index.html')
+//     .pipe(qunit({
+//       timeout: 20
+//     }));
+// });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
@@ -105,4 +105,5 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'commonjs', 'watch', 'test']);
+// gulp.task('default', ['lint', 'sass', 'scripts', 'commonjs', 'watch', 'test']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'commonjs', 'watch']);

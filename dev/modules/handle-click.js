@@ -17,46 +17,46 @@ var handleButton = function(event, params, modal) {
 
   // Since the user can change the background-color of the confirm button programmatically,
   // we must calculate what the color should be on hover/active
-  var normalColor, hoverColor, activeColor;
-  if (targetedConfirm && params.confirmButtonColor) {
-    normalColor  = params.confirmButtonColor;
-    hoverColor   = colorLuminance(normalColor, -0.04);
-    activeColor  = colorLuminance(normalColor, -0.14);
-  }
+  // var normalColor, hoverColor, activeColor;
+  // if (targetedConfirm && params.confirmButtonColor) {
+  //   normalColor  = params.confirmButtonColor;
+  //   hoverColor   = colorLuminance(normalColor, -0.04);
+  //   activeColor  = colorLuminance(normalColor, -0.14);
+  // }
 
-  function shouldSetConfirmButtonColor(color) {
-    if (targetedConfirm && params.confirmButtonColor) {
-      target.style.backgroundColor = color;
-    }
-  }
+  // function shouldSetConfirmButtonColor(color) {
+  //   if (targetedConfirm && params.confirmButtonColor) {
+  //     target.style.backgroundColor = color;
+  //   }
+  // }
 
   switch (e.type) {
-    case 'mouseover':
-      shouldSetConfirmButtonColor(hoverColor);
-      break;
+    // case 'mouseover':
+    //   shouldSetConfirmButtonColor(hoverColor);
+    //   break;
 
-    case 'mouseout':
-      shouldSetConfirmButtonColor(normalColor);
-      break;
+    // case 'mouseout':
+    //   shouldSetConfirmButtonColor(normalColor);
+    //   break;
 
-    case 'mousedown':
-      shouldSetConfirmButtonColor(activeColor);
-      break;
+    // case 'mousedown':
+    //   shouldSetConfirmButtonColor(activeColor);
+    //   break;
 
-    case 'mouseup':
-      shouldSetConfirmButtonColor(hoverColor);
-      break;
+    // case 'mouseup':
+    //   shouldSetConfirmButtonColor(hoverColor);
+    //   break;
 
-    case 'focus':
-      let $confirmButton = modal.querySelector('button.confirm');
-      let $cancelButton  = modal.querySelector('button.cancel');
+    // case 'focus':
+    //   let $confirmButton = modal.querySelector('button.confirm');
+    //   let $cancelButton  = modal.querySelector('button.cancel');
 
-      if (targetedConfirm) {
-        $cancelButton.style.boxShadow = 'none';
-      } else {
-        $confirmButton.style.boxShadow = 'none';
-      }
-      break;
+    //   if (targetedConfirm) {
+    //     $cancelButton.style.boxShadow = 'none';
+    //   } else {
+    //     $confirmButton.style.boxShadow = 'none';
+    //   }
+    //   break;
 
     case 'click':
       let clickedOnModal = (modal === target);
