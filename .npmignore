@@ -5,3 +5,4 @@ node_modules
 bower_components
 .idea
 .git
+npm-debug.log

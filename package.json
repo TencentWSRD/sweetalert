@@ -1,6 +1,6 @@
 {
   "name": "sweetalert-ci-dev",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Development version of sweet-alert.",
   "main": "lib/sweetalert.js",
   "directories": {
